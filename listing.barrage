@@ -1,0 +1,40 @@
+# Claude geez archive
+
+> A Claude conversation archive on the geez thread (the MCP tool that lets a client call Grok).
+
+## Purpose
+Explain this repo as saved talk about geez, not as the tool itself. Source: fitzyracing1/claude-geez.
+
+## How it works (plain English)
+1. Keep the chat history in this repo.
+2. Use it to recall how geez was designed.
+3. Run the real tool from fitzyracing1/geez.
+
+## Key ideas
+- Conversation archive
+- geez thread
+- Family of claude-* repos
+
+## The actual code
+```
+# source: fitzyracing1/claude-geez
+archive = conversation_shelf("geez")
+read(archive)
+```
+
+## Line-by-line translation
+1. conversation_shelf("geez") → “this folder holds that thread”
+2. read(archive) → “open the saved talk”
+
+## Decisions the program makes
+- If a reader wants the running MCP tool → send them to geez
+- If a reader wants the chat → stay here
+
+## What a person would notice
+Talk about the pipe, not the pipe itself.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the archive, or geez.
